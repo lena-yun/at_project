@@ -1,33 +1,11 @@
+import os
+
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import View, TemplateView
 from django.http import HttpResponse, JsonResponse
 from bs4 import BeautifulSoup
 import requests
-
-
-class JSONResponseMixin:
-    """
-    A mixin that can be used to render a JSON response.
-    """
-
-    def render_to_json_response(self, context, **response_kwargs):
-        """
-        Returns a JSON response, transforming 'context' to make the payload.
-        """
-        return JsonResponse(
-            self.get_data(context),
-            **response_kwargs
-        )
-
-    def get_data(self, context):
-        """
-        Returns an object that will be serialized as JSON by json.dumps().
-        """
-        # Note: This is *EXTREMELY* naive; in reality, you'll need
-        # to do much more complex handling to ensure that arbitrary
-        # objects -- such as Django model instances or querysets
-        # -- can be serialized as JSON.
-        return context
+import pandas as pd
 
 
 class KFoodReportViews(TemplateView):
@@ -37,7 +15,8 @@ class KFoodReportViews(TemplateView):
 def recipe_ajax(request):
     if request.is_ajax():
         test = request.GET
-        _url = ''.join([f'{value}={test[value]}' if  idx == 0 else f'&{value}={test[value]}' for idx, value in enumerate(test)])
+        _url = ''.join(
+            [f'{value}={test[value]}' if idx == 0 else f'&{value}={test[value]}' for idx, value in enumerate(test)])
         url = f'http://api.nongsaro.go.kr/service/{_url}'
         res = requests.get(url)
         soup = BeautifulSoup(res.content, 'html.parser')
@@ -53,5 +32,30 @@ class KFoodIdolViews(TemplateView):
 class FoodRecipe2Views(TemplateView):
     template_name = "at_project/gy/food-recipe-2.html"
 
+
 class TableauTestViews(TemplateView):
     template_name = "at_project/gy/tableau_test.html"
+
+
+class KTourViews(TemplateView):
+    def get_context_data(self):
+        context = super().get_context_data()
+        map = pd.read_csv('at_project/views/서울_맛집.csv', encoding='cp949')
+
+        js = map.to_json(orient='records')
+        context['map'] = js
+        return context
+
+    template_name = "at_project/gy/k-tour.html"
+
+
+class KTourSelectViews(View):
+    def get(self, request, id):
+        return JsonResponse(self.get_data(id), safe=False)
+
+    def get_data(self, id):
+        print(id)
+        _map = pd.read_csv('at_project/views/서울_맛집.csv', encoding='cp949')
+        map = _map[_map['구'] == id]
+        js = map.to_json(orient='records')
+        return {'map': js}

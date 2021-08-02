@@ -74,22 +74,125 @@
 }
 
 .price-select {
-    background: #f08632 !important;
+    /*background: #f08632 !important;*/
+    border: 3px solid #f08632;
 }
-.price-select > div>  h5 {
-    color:rgb(255,255,255) !important;
-        margin-top: -10%;
+
+.price-select > div > h5 {
+    /*color:rgb(255,255,255) !important;*/
+    margin-top: -10%;
 }
 
 .table-margin {
     margin: auto;
 }
 
-.table-margin > table{
-   text-align: center;
+.table-margin > table {
+    text-align: center;
     font-size: x-small;
 }
 
 .naver-logo {
     content: url('../img/naver_logo.png') !important;
+    width: 10%;
+}
+
+.map-nav {
+    display: table;
+    table-layout: auto;
+    padding: 4px;
+    border-radius: 23px;
+    border: 1px solid #0475f4;
+    background: #fff;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.side-navbar {
+    width: 180px;
+    height: 500px;
+    position: fixed;
+    margin-left: -1800px;
+    background-color: white;
+    /*transition: 0.5s;*/
+    z-index: 99999;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.my-container {
+    margin-left: 58px;
+    position: relative;
+    margin-top: -300px;
+    z-index: 99999;
+}
+
+.active-nav {
+    margin-left: 0;
+}
+
+/* for main section */
+.active-cont {
+    margin-left: 235px;
+    position: relative;
+    margin-top: -300px;
+    z-index: 99999;
+}
+
+#menu-btn {
+    background-color: white;
+    position: relative;
+    height: 45px;
+    width: 20px;
+    border-radius: 0 0.25rem 0.25rem 0;
+    box-shadow: 0px 0px 2px;
+    margin-top: -550px;
+    z-index: 99999;
+}
+
+.new-span-left {
+    margin-top: 8px;
+    margin-left: -8px;
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.new-span-right {
+    margin-top: 8px;
+    margin-left: -8px;
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.menu-btn-left {
+    margin-left: 180px !important;
+}
+
+.map-div {
+    position: relative;
+    display: inline-block;
+}
+
+.map-div > img {
+    position: absolute;
+    /*padding: 15% 10% 0px 0px;*/
+}
+
+#viz-client-container {
+
+}
+.tableauPlaceholder_add{
+    position: relative; margin-left: auto; margin-right: auto; margin-bottom: 50px;
 }

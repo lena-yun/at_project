@@ -37,3 +37,4 @@ var reload_recipe = () => {
     $('#nongsaroApiLoadingAreaResult1').children('.apiContArea').eq(0).append(text_2);
     $('#nongsaroApiLoadingAreaResult1').children('.apiContArea').eq(1).append(text_3);
 };
+$('.modal-backdrop').css('background-color', '');
