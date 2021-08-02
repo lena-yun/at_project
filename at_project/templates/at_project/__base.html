@@ -139,10 +139,11 @@
                             </li>
                             <li {% if request.path == '/at/idol/' %} class="active" {% endif %}><a
                                     href="{% url 'at_project:idol' %}">K-POP</a></li>
-                            <li {% if request.path == '/at/food-recipe-1/' or request.path == '/at/food-recipe-2/' %} class="active" {% endif %} ><a href="#">K-Recipe</a>
+                            <li {% if request.path == '/at/food-recipe-1/' or request.path == '/at/food-recipe-2/' or request.path == '/at/recipe-ajax/' %} class="active" {% endif %} ><a href="#">K-Recipe</a>
                                 <ul class="dropdown">
                                     <li><a href="{% url 'at_project:food-recipe-1' %}">Recipe-1</a></li>
                                     <li><a href="{% url 'at_project:food-recipe-2' %}">Recipe-2</a></li>
+                                    <li><a href="{% url 'at_project:recipe-ajax' %}">Recipe-3</a></li>
                                     {#                                                                <li><a href="{% url 'at_project:checkout' %}">Check Out</a></li>#}
                                     {#                                                                <li><a href="{% url 'at_project:wisslist' %}">Wisslist</a></li>#}
                                     {#                                                                <li><a href="{% url 'at_project:class' %}">Class</a></li>#}
