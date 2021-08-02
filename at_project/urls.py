@@ -14,7 +14,15 @@ urlpatterns = [
     # path('k-tour/', AboutViews.as_view(), name='k-tour'),
 
     # 지원
+<<<<<<< HEAD
     path('', IndexMainViews.as_view(), name='index'),
     path('k-food-report-2/', KFoodReport2Views.as_view(), name='k-food-report-2'),
     path('food-recipe-1/', FoodRecipe1Views.as_view(), name='food-recipe-1'),
+=======
+    #path('', '', name='index'),
+    path('index/', IndexMainViews.as_view(), name='index'),
+    path('k-food-report-2/', KFoodReport2Views.as_view(), name='k-food-report-2'),
+    path('food-recipe-1/', FoodRecipe1Views.as_view(), name='food-recipe-1'),
+
+>>>>>>> 4924ba81d39261b47505f3aeda2f859ea77f8049
 ]

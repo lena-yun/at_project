@@ -2787,7 +2787,10 @@ ol {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+<<<<<<< HEAD
   /*margin-bottom: 20px;*/
+=======
+>>>>>>> 4924ba81d39261b47505f3aeda2f859ea77f8049
   margin-bottom: 30px;
 }
 .blog__details__ingredients ul li {
@@ -3343,7 +3346,10 @@ ol {
   }
 
   .blog__details__ingredients {
+<<<<<<< HEAD
     /*margin-bottom: 25px;*/
+=======
+>>>>>>> 4924ba81d39261b47505f3aeda2f859ea77f8049
     margin-bottom: 50px;
   }
 
