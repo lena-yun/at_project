@@ -131,11 +131,11 @@
                     <nav class="header__menu mobile-menu">
                         <ul>
                             <li {% if request.path == '/at/k-food-report/' or request.path == '/at/repice-ajax/'  or request.path == '/at/k-food-report-2/' %}
-                                class="active" {% endif %}><a href="#">K-Report</a>
-                                <ul class="dropdown">
-                                    <li><a href="{% url 'at_project:k-food-report' %}">Report-1</a></li>
-                                    <li><a href="{% url 'at_project:k-food-report-2' %}">Report-2</a></li>
-                                </ul>
+                                class="active" {% endif %}><a href="{% url 'at_project:k-food-report' %}">K-Report</a>
+{#                                <ul class="dropdown">#}
+{#                                    <li><a href="{% url 'at_project:k-food-report' %}">Report-1</a></li>#}
+{#                                    <li><a href="{% url 'at_project:k-food-report-2' %}">Report-2</a></li>#}
+{#                                </ul>#}
                             </li>
                             <li {% if request.path == '/at/idol/' %} class="active" {% endif %}><a
                                     href="{% url 'at_project:idol' %}">K-POP</a></li>

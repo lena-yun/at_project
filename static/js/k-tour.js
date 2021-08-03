@@ -51,22 +51,22 @@ map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
 var zoomControl = new kakao.maps.ZoomControl();
 map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 // ---------- 지도 컨트롤 추가 끝 -------
-
-var menu_btn = document.querySelector("#menu-btn");
-var menu_btn_span = document.querySelector("#menu-btn > span");
-var sidebar = document.querySelector("#sidebar");
-var menu_btn_click = () => {
-    menu_btn.addEventListener("click", () => {
-        sidebar.classList.toggle("active-nav");
-        // container.classList.toggle("active-cont");
-        menu_btn_span.classList.toggle("slide-btn-left");
-        menu_btn_span.classList.toggle("new-span-left");
-        menu_btn.classList.toggle("menu-btn-left");
-    });
-}
-menu_btn_click();
+//
+// var menu_btn = document.querySelector("#menu-btn");
+// var menu_btn_span = document.querySelector("#menu-btn > span");
+// var sidebar = document.querySelector("#sidebar");
+// var menu_btn_click = () => {
+//     menu_btn.addEventListener("click", () => {
+//         sidebar.classList.toggle("active-nav");
+//         // container.classList.toggle("active-cont");
+//         menu_btn_span.classList.toggle("slide-btn-left");
+//         menu_btn_span.classList.toggle("new-span-left");
+//         menu_btn.classList.toggle("menu-btn-left");
+//     });
+// }
+// menu_btn_click();
 var new_click = (e) => {
-    var temp = document.querySelector("#menu-btn");
+    // var temp = document.querySelector("#menu-btn");
     var span = e.children;
     var address = $(span).attr('data-address');
     var tel = $(span).attr('data-tel');
@@ -74,9 +74,16 @@ var new_click = (e) => {
     $('#food-title').text(`${title}`);
     $('#food-address').text(`주소 : ${address}`);
     $('#food-tel').text(`전화번호 : ${tel}`);
-    if($('#sidebar').hasClass('active-nav') == false){
-        temp.click();
-    }
+    $('#food-address').empty();
+    var text = `<tr>
+                   <th scope="row">${title}</th>
+                   <td>${address}</td>
+                   <td>${tel}</td>
+                </tr>`
+    $('#food-address').append(text);
+    // if($('#sidebar').hasClass('active-nav') == false){
+    //     temp.click();
+    // }
 }
 
 // ----------------- 정보 지도 끝 ------------------

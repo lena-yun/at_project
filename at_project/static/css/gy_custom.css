@@ -193,6 +193,127 @@
 #viz-client-container {
 
 }
-.tableauPlaceholder_add{
-    position: relative; margin-left: auto; margin-right: auto; margin-bottom: 50px;
+
+.tableauPlaceholder_add {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.idol-div {
+    display: inline-flex;
+    padding-top: 6%;
+    justify-content: space-evenly;;
+}
+
+.idol-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #f08632;
+}
+
+.idol-circle-hover {
+    box-shadow: 1px 1px 10px;
+    opacity: 0.3;
+}
+
+.idol-circle-hover + div {
+    text-align: center;
+    margin-top: -57%;
+    position: relative;
+    /*text-align: center; !*가로정렬*!*/
+    /*line-height: 150px;*/
+    /*opacity: 1 !important;*/
+    /*color: black;*/
+}
+
+.idol-circle-out {
+    box-shadow: none;
+    opacity: 1;
+}
+
+
+.idol-back-1 {
+    background-image: url("../img/iu.jpg");
+    background-size: 100%;
+}
+
+
+.idol-back-2 {
+    background-image: url("../img/rose.jpeg");
+    background-size: 100%;
+}
+
+.idol-back-3 {
+    background-image: url("../img/jin.jpg");
+    background-size: 100%;
+}
+
+.you-font {
+    font-family: NanumSquareRound;
+}
+
+.info-font {
+    font-family: NanumSquareRound;
+}
+
+.info-color {
+    padding-left: 20px;
+}
+
+.info-color > a:nth-child(1) {
+    color: #4267B2;
+    padding-right: 10px;
+}
+
+.info-color > a:nth-child(2) {
+    color: #1DA1F2;
+    padding-right: 10px;
+}
+
+.info-color > a:nth-child(3) {
+    color: #5851D8;
+    padding-right: 10px;
+}
+
+.info-color > a:nth-child(4) {
+    color: #FF0000;
+    padding-right: 10px;
+}
+
+
+.like-btn-svg {
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    background: url(https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png) no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: -109px;
+}
+
+
+.like-btn-svg.animate {
+    transition: background 1s steps(28);
+    animation: fave-like-btn-svg 1s steps(28);
+    background-position: -2800px 0;
+}
+
+@keyframes fave-like-btn-svg {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -2800px 0;
+    }
+}
+
+.map-title {
+    font-size: 1rem;
+    font-family: NanumSquareRound;
+    padding: 10px 0px 10px 0px;
+    background-color: #e9ecef;
 }
