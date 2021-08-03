@@ -216,7 +216,7 @@
 
 .idol-circle-hover {
     box-shadow: 1px 1px 10px;
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .idol-circle-hover + div {
@@ -316,4 +316,31 @@
     font-family: NanumSquareRound;
     padding: 10px 0px 10px 0px;
     background-color: #e9ecef;
+}
+
+/* ------ 커스컴 올빼미 -----*/
+#this-video > .owl-nav {
+    font-size: -webkit-xxx-large !important;
+    position: absolute;
+    margin-top: -270px;
+}
+
+#this-video > .owl-nav > .owl-next {
+    position: absolute;
+    margin-left: 770px;
+}
+
+#this-video > .owl-nav > .owl-prev {
+    position: absolute;
+    margin-left: -30px;
+}
+
+.video-tube{
+  width:75%;
+  margin:0 auto;
+}
+
+.video-tube iframe{
+  width:100%;
+  margin:0 auto;
 }

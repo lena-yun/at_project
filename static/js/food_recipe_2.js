@@ -121,3 +121,15 @@ var show_div = (obj) => {
     $(obj).addClass('price-select')
     $(`div[name=${name}]`).removeClass('price-div-none')
 };
+
+ $("#cabbage-div").owlCarousel({
+        nav: true,
+        // loop: true,
+        dots: true,
+        // autoplay: true,
+        // rewind: true,
+        // autoplayTimeout: 5000,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {0: {items: 2,}, 600: {items: 2}, 1000: {items: 5}}
+    });

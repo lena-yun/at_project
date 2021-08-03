@@ -26,7 +26,7 @@ var heart = (obj) => {
 var idol_mouse_on = (obj) => {
     var name = $(obj).children().eq(0).attr('name');
     var sibling = $(obj).children().eq(1);
-    sibling.html(`<h3 style="font-family: NanumSquareRound; color: black;">${name}</h3>`);
+    sibling.html(`<h3 style="font-family: NanumSquareRound; color: black;font-weight: 600;">${name}</h3>`);
     $(obj).children().eq(0).addClass("idol-circle-hover");
     $(obj).children().eq(0).removeClass("idol-circle-out");
 }
@@ -37,3 +37,28 @@ var idol_mouse_out = (obj) => {
     $(obj).children().eq(0).removeClass("idol-circle-hover");
     $(obj).children().eq(0).addClass("idol-circle-out");
 }
+
+var show = () => {
+    $("#this-video").owlCarousel({
+        nav: true,
+        loop: true,
+        dots: true,
+        autoplay: true,
+        rewind: true,
+        autoplayTimeout: 5000,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {0: {items: 2,}, 600: {items: 2}, 1000: {items: 2}}
+    });
+}
+$('#video02Link').magnificPopup({
+    type: 'inline',
+    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+});
+
+$('#video03Link').magnificPopup({
+    type: 'inline',
+    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+});
+
+
