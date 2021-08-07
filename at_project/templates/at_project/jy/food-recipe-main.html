@@ -8,12 +8,12 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="breadcrumb__text">
-                        <h2>K-FOOD-REPORT</h2>
+                        <h2>Recipes</h2>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="breadcrumb__links">
-                        <a href="">Home</a>
+                        <a href="{% url 'at_project:index' %}">Home</a>
                         <span>Blog</span>
                     </div>
                 </div>
@@ -28,63 +28,100 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="{% static 'img/kReport-main.PNG' %}">
+                        <div class="blog__item__pic set-bg" data-setbg="{% static 'img/pastestew.jpg' %}">
                             <div class="blog__pic__inner">
-                                <div class="label">Report</div>
+                                <div class="label">Recipes</div>
                                 <ul>
-                                    <li>By <span>MinKyung Kim</span></li>
-                                    <li>05 Aug 2021</li>
+                                    <li><span>된장찌개</span></li>
+                                    <li>Soybean Paste Stew</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="blog__item__text">
-                            <a href="{% url 'at_project:k-food-report-2' %}" style="text-transform: none;"><h2>Is Korean food<br/>popular abroad?</h2></a>
-                            <p>Herbs are fun and easy to grow. When harvested they make even the simplest meal seem like
-                                a gourmet delight. By using herbs in your cooking you can easily change the flavors of
-                            your recipes in many different ways, according to which herbs you add...</p>
-                            <a href="{% url 'at_project:k-food-report-2' %}">READ MORE</a>
+                            <p>
+                            Doenjang-seasoned stew made with anchovy broth, fish or clams, and summer squash. The broth is thick and flavorful, and good for mixing with rice.
+                            </p>
+                            <a href="{% url 'at_project:food-recipe-detail-1' %}">READ MORE</a>
                         </div>
                     </div>
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="{% static 'img/kReport-ex.png' %}">
+                        <div class="blog__item__pic set-bg" data-setbg="{% static 'img/spicyStirFriedPork.jpg' %}">
                             <div class="blog__pic__inner">
-                                <div class="label">Report</div>
+                                <div class="label">Recipes</div>
                                 <ul>
-                                    <li>By <span>MinKyung Kim</span></li>
-                                    <li>07 Aug 2021</li>
+                                    <li><span>제육볶음</span></li>
+                                    <li>Stir-fried Pork</li>
+
                                 </ul>
                             </div>
                         </div>
                         <div class="blog__item__text">
-                            <h2>What kind of Korean food and Korean restaurants do Koreans like?</h2>
-                            <p>Herbs are fun and easy to grow. When harvested they make even the simplest meal seem like
-                                a gourmet delight. By using herbs in your cooking you can easily change the flavors of
-                            your recipes in many different ways, according to which herbs you add...</p>
-                            <a href="{% url 'at_project:k-food-report-3' %}">READ MORE</a>
+                            <p>
+                                Thinly sliced pork marinated in spicy ginger-gochujang and stir-fried with onion, carrots, perilla leaves, or abbage. Ingredients vary according to taste.</p>
+                            <a href="{% url 'at_project:food-recipe-detail-2' %}">READ MORE</a>
                         </div>
                     </div>
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="{% static 'img/kReport-detail3.jpg' %}">
+                        <div class="blog__item__pic set-bg" data-setbg="{% static 'img/seafoodpajeon.jpg' %}">
                             <div class="blog__pic__inner">
-                                <div class="label">Report</div>
+                                <div class="label">Recipes</div>
                                 <ul>
-                                    <li>By <span>MinKyung Kim</span></li>
-                                    <li>08 Aug 2021</li>
+                                    <li><span>해물파전</span></li>
+                                    <li>Seafood and Green Onion Pancake</li>
+
                                 </ul>
                             </div>
                         </div>
                         <div class="blog__item__text">
-                            <h2>Price Prediction of Agricultural Product</h2>
-                            <p>Herbs are fun and easy to grow. When harvested they make even the simplest meal seem like
-                                a gourmet delight. By using herbs in your cooking you can easily change the flavors of
-                            your recipes in many different ways, according to which herbs you add...</p>
-                            <a href="{% url 'at_project:k-food-report-4' %}">READ MORE</a>
+                            <h2>Haemulpajeon</h2>
+                            <p>
+                            Julienned, tender young green onion stems folded into a flour batter with squid, clam meat, and oysters and pan-fried. Served with a soy vinaigrette dipping sauce.
+                            </p>
+                            <a href="{% url 'at_project:food-recipe-detail-3' %}">READ MORE</a>
                         </div>
+                    </div>
+                    <div class="blog__item">
+                        <div class="blog__item__pic set-bg" data-setbg="{% static 'img/kimchijjigae.jpg' %}">
+                            <div class="blog__pic__inner">
+                                <div class="label">Recipes</div>
+                                <ul>
+                                    <li><span>돼지고기 김치찌개</span></li>
+                                    <li>Pork and Kimchi Stew</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="blog__item__text">
+                            <p>
+                                Over-fermented kimchi boiled with pork, bean curd, and green onion. Often considered Korean “soul food,” this spicy kimchi stew strikes a perfect balance with the greasy pork.
+                            </p>
+                            <a href="{% url 'at_project:food-recipe-detail-4' %}">READ MORE</a>
+                        </div>
+
+                    </div>
+                    <div class="blog__item">
+                        <div class="blog__item__pic set-bg" data-setbg="{% static 'img/samgyetang-recipe.jpg' %}">
+                            <div class="blog__pic__inner">
+                                <div class="label">Recipes</div>
+                                <ul>
+                                    <li><span>삼계탕</span></li>
+                                    <li>Ginseng Chicken Soup</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="blog__item__text">
+                            <h2></h2>
+                            <p>
+                            Tender, whole, young chicken stuffed with ginseng, jujubes, sweet rice, and whole garlic cloves and simmered until tender. The combination of chicken and ginseng creates a complex yet harmonious flavor. This is a classic summertime dish that revitalizes the body and soul.
+                            </p>
+                            <a href="{% url 'at_project:food-recipe-detail-5' %}">READ MORE</a>
+                        </div>
+
                     </div>
                     <div class="shop__pagination">
                         <a href="#">1</a>
-{#                        <a href="#">2</a>#}
-{#                        <a href="#">3</a>#}
+                        <a href="#">2</a>
+                        <a href="#">3</a>
                         <a href="#"><span class="arrow_carrot-right"></span></a>
                     </div>
                 </div>
@@ -156,18 +193,6 @@
                                 </a>
                             </div>
                         </div>
-{#                        <div class="blog__sidebar__item">#}
-{#                            <h5>Categories</h5>#}
-{#                            <div class="blog__sidebar__item__categories">#}
-{#                                <ul>#}
-{#                                    <li><a href="{% url 'at_project:recipe-ajax' %}">Repice <span>36</span></a></li>#}
-{#                                    <li><a href="#">Guides <span>18</span></a></li>#}
-{#                                    <li><a href="#">News <span>09</span></a></li>#}
-{#                                    <li><a href="#">Videos <span>12</span></a></li>#}
-{#                                    <li><a href="#">Trending <span>27</span></a></li>#}
-{#                                </ul>#}
-{#                            </div>#}
-{#                        </div>#}
                         <div class="blog__sidebar__item">
                             <h5>NEWsLETTeR</h5>
                             <p>Subscribe to our newsletter and get our newest updates right on your inbox.</p>
