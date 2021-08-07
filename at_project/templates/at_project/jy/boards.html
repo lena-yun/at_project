@@ -44,14 +44,13 @@
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab" aria-selected="false">Ranking</a>
                         </li>
-                        <li class="nav-item" onclick="show()">
+                        <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab" aria-selected="false">Voting</a>
                         </li>
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="tabs-1" role="tabpanel">
                             <div class="row d-flex justify-content-center">
-
                             <!-- 난이도별 음식 Section Begin -->
                             <div class="categories">
                                 <div class="container">
@@ -64,53 +63,68 @@
 
                                         <div class="categories__slider owl-carousel">
                                             <div class="product__item">
-                                                        <div class="product__item__pic set-bg" id="#challengeTag1" onclick="show_div(this)" data-setbg="/static/img/boards/veryeasy-pork.jpg" >
+                                                        <div class="product__item__pic set-bg"  data-setbg="/static/img/boards/veryeasy-pork.jpg" >
                                                             <div class="product__label">
-                                                                <span>삼겹살</span>
+                                                                <span>Samgyeopsal</span>
                                                             </div>
                                                         </div>
                                                         <div class="product__item__text">
-                                                            <h6><a href="#challengeTag1">very easy<br>★☆☆☆☆</a></h6>
+                                                            <h6><a href="#challengeTag1" data-toggle="collapse" aria-expanded="true" aria-controls="challengeTag1" >very easy</a></h6>
+                                                            <span class="icon_star"></span>
                                                         </div>
                                             </div>
                                             <div class="product__item">
-                                                        <div class="product__item__pic set-bg" id="easy-click" onclick="show_div(this)" data-setbg="/static/img/boards/easy-kimbab.png">
+                                                        <div class="product__item__pic set-bg" data-setbg="/static/img/boards/easy-kimbab.png">
                                                             <div class="product__label">
-                                                                <span>김밥</span>
+                                                                <span>Kimbap</span>
                                                             </div>
                                                         </div>
                                                         <div class="product__item__text">
-                                                            <h6><a href="#challengeTag2">easy<br>★★☆☆☆</a></h6>
+                                                            <h6><a href="#challengeTag2" data-toggle="collapse" aria-expanded="true" aria-controls="challengeTag2">easy</a></h6>
+                                                            <span class="icon_star"></span>
+                                                            <span class="icon_star"></span>
                                                         </div>
                                             </div>
                                             <div class="product__item">
-                                                        <div class="product__item__pic set-bg" id="normal-click" onclick="show_div(this)" data-setbg="/static/img/boards/normal-japchae.jpg">
+                                                        <div class="product__item__pic set-bg" data-setbg="/static/img/boards/normal-japchae.jpg">
                                                             <div class="product__label">
-                                                                <span>잡채</span>
+                                                                <span>Japchae</span>
                                                             </div>
                                                         </div>
                                                         <div class="product__item__text">
-                                                            <h6><a href="#challengeTag3">normal<br>★★★☆☆</a></h6>
+                                                            <h6><a href="#challengeTag3" data-toggle="collapse" aria-expanded="true" aria-controls="challengeTag3">normal</a></h6>
+                                                            <span class="icon_star"></span>
+                                                            <span class="icon_star"></span>
+                                                            <span class="icon_star"></span>
                                                         </div>
                                             </div>
                                             <div class="product__item">
-                                                        <div class="product__item__pic set-bg" id="hard-click" onclick="show_div(this)" data-setbg="/static/img/boards/hard-sundae.png">
+                                                        <div class="product__item__pic set-bg" data-setbg="/static/img/boards/hard-sundae.png">
                                                             <div class="product__label">
-                                                                <span>순대</span>
+                                                                <span>Sundae</span>
                                                             </div>
                                                         </div>
                                                         <div class="product__item__text">
-                                                            <h6><a href="#challengeTag4">hard<br>★★★★☆</a></h6>
+                                                            <h6><a href="#challengeTag4" data-toggle="collapse" aria-expanded="true" aria-controls="challengeTag4">hard</a></h6>
+                                                            <span class="icon_star"></span>
+                                                            <span class="icon_star"></span>
+                                                            <span class="icon_star"></span>
+                                                            <span class="icon_star"></span>
                                                         </div>
                                             </div>
                                             <div class="product__item">
-                                                        <div class="product__item__pic set-bg" id="veryhard-click" onclick="show_div(this)" data-setbg="/static/img/boards/veryhard-foot.jpg">
+                                                        <div class="product__item__pic set-bg" data-setbg="/static/img/boards/veryhard-foot.jpg">
                                                             <div class="product__label">
-                                                                <span>닭발</span>
+                                                                <span>Dakbal</span>
                                                             </div>
                                                         </div>
                                                         <div class="product__item__text">
-                                                            <h6><a href="#challengeTag5">very hard<br>★★★★★</a></h6>
+                                                            <h6><a href="#challengeTag5" data-toggle="collapse" aria-expanded="true" aria-controls="challengeTag5">very hard</a></h6>
+                                                            <span class="icon_star"></span>
+                                                            <span class="icon_star"></span>
+                                                            <span class="icon_star"></span>
+                                                            <span class="icon_star"></span>
+                                                            <span class="icon_star"></span>
                                                         </div>
                                             </div>
                                         </div>
@@ -123,50 +137,56 @@
                             <!--난이도별 음식 설명 Start-->
                             <section class="blog-details spad">
                                     <div class="container">
-                                        <div class="row d-flex justify-content-center">
-                                            <div class="col-lg-8">
-                                                <div class="blog__details__content">
-                            <!--                        <div class="blog__details__share">-->
-                            <!--                            <a href="https://www.youtube.com/watch?v=i1djfV9uigc&t=11s" class="youtube"><i class="fa fa-youtube-play"></i></a>-->
-                            <!--                        </div>-->
-                                                    <div class="row"><a name="challengeTag1"></a>
+                                        <div class="row-vh d-flex flex-row justify-content-center">
+                                            <div class="col-lg-12">
+                                                <div class="blog__details__content collapse" id="challengeTag1">
+                                                    <div class="section-title text-center">
+                                                        <h2>Samgyeopsal</h2>
+                                                    </div>
+                                                    <div class="row">
                                                         <div class="col-lg-6">
-                                                            <img src="{% static 'img/boards/veryeasy-pork.jpg' %}" class="rounded-circle" alt="">
+<!--                                                            <img src="{% static 'img/boards/veryeasy-pork.jpg' %}" class="rounded-circle" alt="" onclick="'onDisplay1()">-->
+                                                            <img src="{% static 'img/boards/veryeasy-pork.jpg' %}" >
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <div class="box">
-                                                                <h3>LEVEL 1. Samgyeopsal<br></h3>
                                                                 <p>
-                                                                Fat-streaked pork belly grilled and dipped in salt or ssamjang (red soybean paste dip). Also eaten wrapped in lettuce leaves.<br>
+                                                                [삼겹살]<br>
+                                                                Fat-streaked pork belly grilled and dipped in salt or ssamjang (red soybean paste dip).<br> Also eaten wrapped in lettuce leaves.<br>
                                                                 </p>
                                                             </div>
                                                         </div>
                                                     </div>
-
                                                     <div class="blog__details__recipe">
                                                         <div class="blog__details__recipe__item">
-                                                            <h6><img src="{% static 'img/blog/details/clock.png' %}" alt="">LEVEL 1</h6>
-                                                            <span>★</span>
+                                                            <h6><img src="{% static 'img/blog/details/user.png' %}" alt="">LEVEL</h6>
+                                                            <div class="rating">
+                                                                <span class="icon_star"></span>
+                                                            </div>
                                                         </div>
                                                         <div class="blog__details__recipe__item">
                                                             <h6><img src="{% static 'img/blog/details/clock.png' %}" alt="">Samgyeopsal</h6>
                                                             <span>pork belly</span>
                                                         </div>
+                                                        <div class="blog__details__recipe__item">
+                                                            <h6><img src="{% static 'img/blog/details/clock.png' %}" alt=""> COOK TIME</h6>
+                                                            <span>15 minute</span>
+                                                        </div>
                                                     </div>
-
                                                 </div>
-                                                <div class="blog__details__content">
-                            <!--                        <div class="blog__details__share">-->
-                            <!--                            <a href="https://www.youtube.com/watch?v=i1djfV9uigc&t=11s" class="youtube"><i class="fa fa-youtube-play"></i></a>-->
-                            <!--                        </div>-->
-                                                    <div class="row"><a name="challengeTag2"></a>
+
+                                                <div class="blog__details__content collapse" id="challengeTag2">
+                                                    <div class="section-title text-center">
+                                                        <h2>Kimbap</h2>
+                                                    </div>
+                                                    <div class="row">
                                                         <div class="col-lg-6">
-                                                            <img src="{% static 'img/boards/easy-kimbab.png' %}" class="rounded-circle" alt="">
+                                                            <img src="{% static 'img/boards/easy-kimbab.png' %}" alt="">
                                                         </div>
                                                         <div class="col-lg-6">
                                                         <div class="box">
-                                                            <h3>LEVEL 2. Kimbap<br></h3>
-                                                            <p>Rice seasoned with salt and sesame oil and rolled up in a sheet of roasted gim (dried laver) with spinach, carrots, and pickled white radish. The long roll is sliced and served in bite-sized pieces.<br>
+                                                            <p>[김밥]<br>
+                                                                Rice seasoned with salt and sesame oil and rolled up in a sheet of roasted gim (dried laver) with spinach, carrots, and pickled white radish.<br> The long roll is sliced and served in bite-sized pieces.<br>
                                                             </p>
                                                         </div>
                                                         </div>
@@ -174,8 +194,11 @@
 
                                                     <div class="blog__details__recipe">
                                                         <div class="blog__details__recipe__item">
-                                                            <h6><img src="{% static 'img/blog/details/user.png' %}" alt=""> SERVES</h6>
-                                                            <span>serves 4</span>
+                                                            <h6><img src="{% static 'img/blog/details/user.png' %}" alt="">LEVEL</h6>
+                                                            <div class="rating">
+                                                                <span class="icon_star"></span>
+                                                                <span class="icon_star"></span>
+                                                            </div>
                                                         </div>
                                                         <div class="blog__details__recipe__item">
                                                             <h6><img src="{% static 'img/blog/details/clock.png' %}" alt="">KIMBAP</h6>
@@ -188,18 +211,19 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="blog__details__content">
-                            <!--                        <div class="blog__details__share">-->
-                            <!--                            <a href="https://www.youtube.com/watch?v=i1djfV9uigc&t=11s" class="youtube"><i class="fa fa-youtube-play"></i></a>-->
-                            <!--                        </div>-->
-                                                    <div class="row"><a name="challengeTag3"></a>
+                                                <div class="blog__details__content collapse" id="challengeTag3">
+                                                    <div class="section-title text-center">
+                                                        <h2>Japchae</h2>
+                                                    </div>
+                                                    <div class="row">
                                                         <div class="col-lg-6">
-                                                            <img src="{% static 'img/boards/normal-japchae.jpg' %}" class="rounded-circle" alt="">
+                                                            <img src="{% static 'img/boards/normal-japchae.jpg' %}" alt="">
                                                         </div>
                                                         <div class="col-lg-6">
                                                         <div class="box">
-                                                            <h3>LEVEL 3. Japchae<br></h3>
-                                                            <p>Glass noodles stir-fried with beef and assorted mushrooms and vegetables. A colorful classic dish that is always served at large gatherings or on special occasions.<br>
+                                                            <p>[잡채]<br>
+                                                                Glass noodles stir-fried with beef and assorted mushrooms and vegetables.<br>
+                                                                A colorful classic dish that is always served at large gatherings or on special occasions.<br>
                                                             </p>
                                                         </div>
                                                         </div>
@@ -207,8 +231,12 @@
 
                                                     <div class="blog__details__recipe">
                                                         <div class="blog__details__recipe__item">
-                                                            <h6><img src="{% static 'img/blog/details/user.png' %}" alt=""> SERVES</h6>
-                                                            <span>serves 4</span>
+                                                            <h6><img src="{% static 'img/blog/details/user.png' %}" alt="">LEVEL</h6>
+                                                            <div class="rating">
+                                                                <span class="icon_star"></span>
+                                                                <span class="icon_star"></span>
+                                                                <span class="icon_star"></span>
+                                                            </div>
                                                         </div>
                                                         <div class="blog__details__recipe__item">
                                                             <h6><img src="{% static 'img/blog/details/clock.png' %}" alt=""> PREP TIME</h6>
@@ -221,27 +249,32 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="blog__details__content">
-                            <!--                        <div class="blog__details__share">-->
-                            <!--                            <a href="https://www.youtube.com/watch?v=i1djfV9uigc&t=11s" class="youtube"><i class="fa fa-youtube-play"></i></a>-->
-                            <!--                        </div>-->
-                                                    <div class="row"><a name="challengeTag4"></a>
+                                                <div class="blog__details__content collapse" id="challengeTag4">
+                                                    <div class="section-title text-center">
+                                                        <h2>Sundae</h2>
+                                                    </div>
+                                                    <div class="row">
                                                         <div class="col-lg-6">
-                                                            <img src="{% static 'img/boards/hard-sundae.png' %}" class="rounded-circle" alt="">
+                                                            <img src="{% static 'img/boards/hard-sundae.png' %}" alt="">
                                                         </div>
                                                         <div class="col-lg-6">
                                                         <div class="box">
-                                                            <h3>LEVEL 4. Sundae<br></h3>
-                                                            <p>Pork intestines stuffed with glass noodles, vegetables, sweet rice, coagulated pig's blood (seonji) and steamed. Variations include Ojingeosundae (stuffed squid) and chapssal sundae (sweet rice sundae). This Korean blood sausage also comes in regional variations such as Byeongcheon or Abai Blood Sausage.<br>
+                                                            <p>[순대]<br>
+                                                                Pork intestines stuffed with glass noodles, vegetables, sweet rice, coagulated pig's blood (seonji) and steamed.<br>
+                                                                Variations include Ojingeosundae (stuffed squid) and chapssal sundae (sweet rice sundae). This Korean blood sausage also comes in regional variations such as Byeongcheon or Abai Blood Sausage.<br>
                                                             </p>
                                                         </div>
                                                         </div>
                                                     </div>
-
                                                     <div class="blog__details__recipe">
                                                         <div class="blog__details__recipe__item">
-                                                            <h6><img src="{% static 'img/blog/details/user.png' %}" alt=""> SERVES</h6>
-                                                            <span>serves 4</span>
+                                                            <h6><img src="{% static 'img/blog/details/user.png' %}" alt="">LEVEL</h6>
+                                                            <div class="rating">
+                                                                <span class="icon_star"></span>
+                                                                <span class="icon_star"></span>
+                                                                <span class="icon_star"></span>
+                                                                <span class="icon_star"></span>
+                                                            </div>
                                                         </div>
                                                         <div class="blog__details__recipe__item">
                                                             <h6><img src="{% static 'img/blog/details/clock.png' %}" alt=""> PREP TIME</h6>
@@ -254,26 +287,32 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="blog__details__content">
-                            <!--                        <div class="blog__details__share">-->
-                            <!--                            <a href="https://www.youtube.com/watch?v=i1djfV9uigc&t=11s" class="youtube"><i class="fa fa-youtube-play"></i></a>-->
-                            <!--                        </div>-->
-                                                    <div class="row"><a name="challengeTag4"></a>
+                                                <div class="blog__details__content collapse" id="challengeTag5">
+                                                    <div class="section-title text-center">
+                                                        <h2>Dakbal</h2>
+                                                    </div>
+                                                    <div class="row">
                                                         <div class="col-lg-6">
-                                                            <img src="{% static 'img/boards/veryhard-foot.jpg' %}" class="rounded-circle" alt="">
+                                                            <img src="{% static 'img/boards/veryhard-foot.jpg' %}"  alt="">
                                                         </div>
                                                         <div class="col-lg-6">
                                                         <div class="box">
-                                                            <h3>LEVEL 5. Dakbal<br></h3>
-                                                            <p>Chicken feet boiled with garlic, green onion, ginger, and bay leaves and stir-fried with a mixture of gochujang (red chili paste), red chili powder, chopped garlic, syrup, and rice wine.</p>
+                                                            <p>[닭발]<br>
+                                                                Chicken feet boiled with garlic, green onion, ginger, and bay leaves and stir-fried with a mixture of gochujang (red chili paste), red chili powder, chopped garlic, syrup, and rice wine.</p>
                                                         </div>
                                                         </div>
                                                     </div>
 
                                                     <div class="blog__details__recipe">
                                                         <div class="blog__details__recipe__item">
-                                                            <h6><img src="{% static 'img/blog/details/user.png' %}" alt=""> SERVES</h6>
-                                                            <span>serves 4</span>
+                                                            <h6><img src="{% static 'img/blog/details/user.png' %}" alt="">LEVEL</h6>
+                                                            <div class="rating">
+                                                                <span class="icon_star"></span>
+                                                                <span class="icon_star"></span>
+                                                                <span class="icon_star"></span>
+                                                                <span class="icon_star"></span>
+                                                                <span class="icon_star"></span>
+                                                            </div>
                                                         </div>
                                                         <div class="blog__details__recipe__item">
                                                             <h6><img src="{% static 'img/blog/details/clock.png' %}" alt=""> PREP TIME</h6>
@@ -293,11 +332,14 @@
                         </div>
                         <div class="tab-pane" id="tabs-2" role="tabpanel">
                             <div class="row d-flex justify-content-center">
-                                <div class="col-lg-6">
+                                <div class="col-lg-4">
                                     <img src="{% static 'img/rank.png' %}" alt="">
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-3">
                                     <img src="{% static 'img/posts.png' %}" alt="">
+                                    <section class="blog-details spad">
+                                        <img src="{% static 'img/posts.png' %}" alt="">
+                                    </section>
                                 </div>
                             </div>
                         </div>
@@ -315,67 +357,110 @@
                                                 <div class="blog__details__content">
                                                     <div class="row">
                                                         <div class="col-lg-4">
-                                                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                                              <div class="carousel-inner">
-                                                                <div class="carousel-item active">
-                                                                  <img src="{% static 'img/makgeolli.jpeg' %}" alt="First slide">
-                                                                    <h5>[막걸리] Makgeolli</h5>
-                                                                    <p>Traditional Korean alcoholic beverage made by steaming glutinous and non-glutinous rice, barley, and wheat, mixing them with malt and water, and leaving the mixture to undergo fermentation.</p>
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                  <img src="{% static 'img/soju.jpg' %}" alt="Second slide">
-                                                                    <h5>[소주] Soju</h5>
-                                                                    <p>Comparable to vodka but less potent, soju is the most popular traditional Korean liquor among the general public. Soju was originally brewed from grains; today it is mass-produced mainly from sweet potatoes.
-                                                                    </p>
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                  <img src="{% static 'img/cheongju.jpg'%}" alt="Third slide">
-                                                                    <h5>[청주] Cheongju</h5>
-                                                                    <p>Cheongju is a traditional Korean alcoholic beverage made from grain. It is made by saccharifying and fermenting rice with yeast, which is amalgamated and propagated by mold and yeast. It is also called clear wine or jingju (澄酒).</p>
-                                                                </div>
-                                                              </div>
-                                                              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                                <span class="sr-only">Previous</span>
-                                                              </a>
-                                                              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                                <span class="sr-only">Next</span>
-                                                              </a>
+                                                            <img src="{% static 'img/makgeolli.jpeg' %}">
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <img src="{% static 'img/soju.jpg' %}">
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <img src="{% static 'img/cheongju.jpg' %}">
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-4 text-center">
+                                                                <h5>[막걸리] Makgeolli</h5>
+                                                                <p>Traditional Korean alcoholic beverage made by steaming glutinous and non-glutinous
+                                                                    rice, barley, and wheat, mixing them with malt and water, and leaving the mixture to undergo fermentation.
+                                                                </p>
                                                             </div>
-<!--                                                            <img src="{% static 'img/makgeolli.jpeg' %}" alt="">-->
-<!--                                                            <img src="{% static 'img/soju.jpg' %}" alt="">-->
-<!--                                                            <img src="{% static 'img/cheongju.jpg' %}" alt="">-->
-<!--                                                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">-->
-<!--                                                              <ol class="carousel-indicators">-->
-<!--                                                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>-->
-<!--                                                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
-<!--                                                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
-<!--                                                              </ol>-->
+                                                            <div class="col-lg-4 text-center">
+                                                                <h5>[소주] Soju</h5>
+                                                                <p>Comparable to vodka but less potent, soju is the most popular traditional Korean liquor among the general public. Soju was originally brewed from grains; today it is mass-produced mainly from sweet potatoes.
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-lg-4 text-center">
+                                                                <h5>[청주] Cheongju</h5>
+                                                                <p>Cheongju is a traditional Korean alcoholic beverage made from grain.
+                                                                    It is made by saccharifying and fermenting rice with yeast,
+                                                                    which is amalgamated and propagated by mold and yeast. It is also called clear wine or jingju (澄酒).
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+<!--                                                    <div class="row">-->
+<!--                                                        <div class="col-lg-4">-->
+<!--                                                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">-->
 <!--                                                              <div class="carousel-inner">-->
 <!--                                                                <div class="carousel-item active">-->
-<!--                                                                  <img class="d-block w-100" src="img/makgeolli.jpeg" alt="First slide">-->
+<!--                                                                  <img src="{% static 'img/makgeolli.jpeg' %}" alt="First slide">-->
+<!--                                                                    <h5>[막걸리] Makgeolli</h5>-->
+<!--                                                                    <p>Traditional Korean alcoholic beverage made by steaming glutinous and non-glutinous rice, barley, and wheat, mixing them with malt and water, and leaving the mixture to undergo fermentation.</p>-->
 <!--                                                                </div>-->
 <!--                                                                <div class="carousel-item">-->
-<!--                                                                  <img class="d-block w-100" src="img/soju.jpg" alt="Second slide">-->
+<!--                                                                  <img src="{% static 'img/soju.jpg' %}" alt="Second slide">-->
+<!--                                                                    <h5>[소주] Soju</h5>-->
+<!--                                                                    <p>Comparable to vodka but less potent, soju is the most popular traditional Korean liquor among the general public. Soju was originally brewed from grains; today it is mass-produced mainly from sweet potatoes.-->
+<!--                                                                    </p>-->
 <!--                                                                </div>-->
 <!--                                                                <div class="carousel-item">-->
-<!--                                                                  <img class="d-block w-100" src="img/cheongju.jpg" alt="Third slide">-->
+<!--                                                                  <img src="{% static 'img/cheongju.jpg'%}" alt="Third slide">-->
+<!--                                                                    <h5>[청주] Cheongju</h5>-->
+<!--                                                                    <p>Cheongju is a traditional Korean alcoholic beverage made from grain. It is made by saccharifying and fermenting rice with yeast, which is amalgamated and propagated by mold and yeast. It is also called clear wine or jingju (澄酒).</p>-->
 <!--                                                                </div>-->
 <!--                                                              </div>-->
-<!--                                                              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">-->
+<!--                                                              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">-->
 <!--                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
 <!--                                                                <span class="sr-only">Previous</span>-->
 <!--                                                              </a>-->
-<!--                                                              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">-->
+<!--                                                              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">-->
 <!--                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
 <!--                                                                <span class="sr-only">Next</span>-->
 <!--                                                              </a>-->
 <!--                                                            </div>-->
-                                                        </div>
-                                                        <div class="col-lg-8">
-<!--                                                            <h5>Poll: Which Korean alcohol do you like the most?</h5><br><br><br><br><br>-->
-                                                            <div class="span6">
+<!--&lt;!&ndash;-->
+<!--                                                        </div>-->
+<!--                                                        <div class="col-lg-8">-->
+<!--&lt;!&ndash;                                                            <h5>Poll: Which Korean alcohol do you like the most?</h5><br><br><br><br><br>&ndash;&gt;-->
+<!--                                                            <div class="span6">-->
+<!--                                                             <strong>Makgeolli</strong><span class="pull-right">30%</span>-->
+<!--                                                              <div class="progress progress-danger active">-->
+<!--                                                                  <div class="bar" style="width: 30%;"></div>-->
+<!--                                                              </div>-->
+<!--                                                              <strong>Soju</strong><span class="pull-right">40%</span>-->
+<!--                                                              <div class="progress progress-info active">-->
+<!--                                                                  <div class="bar" style="width: 40%;"></div>-->
+<!--                                                              </div>-->
+<!--            &lt;!&ndash;                                                  <strong>iPad/iPhone</strong><span class="pull-right">10%</span>&ndash;&gt;-->
+<!--            &lt;!&ndash;                                                  <div class="progress progress-striped active">&ndash;&gt;-->
+<!--            &lt;!&ndash;                                                      <div class="bar" style="width: 10%;"></div>&ndash;&gt;-->
+<!--            &lt;!&ndash;                                                  </div>&ndash;&gt;-->
+<!--                                                              <strong>Cheongju</strong><span class="pull-right">5%</span>-->
+<!--                                                              <div class="progress progress-success active">-->
+<!--                                                                  <div class="bar" style="width: 5%;"></div>-->
+<!--                                                              </div>-->
+<!--                                                              <strong>Others</strong><span class="pull-right">15%</span>-->
+<!--                                                              <div class="progress progress-warning active">-->
+<!--                                                                  <div class="bar" style="width: 15%;"></div>-->
+<!--                                                              </div>-->
+<!--                                                              <p>-->
+<!--                                                                  <a href="#" class="btn btn-large btn-success">Vote</a>-->
+<!--&lt;!&ndash;                                                                <a href="#" class="pull-right">View detailed results</a>&ndash;&gt;-->
+<!--                                                              </p>-->
+<!--                                                            </div>-->
+<!--                                                        </div>-->
+
+<!--                                                    </div>-->
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <div class="blog-details spad">
+                                    <div class="container">
+                                     <div class="row d-flex justify-content-center">
+                                         <div class="span6 ">
                                                              <strong>Makgeolli</strong><span class="pull-right">30%</span>
                                                               <div class="progress progress-danger active">
                                                                   <div class="bar" style="width: 30%;"></div>
@@ -384,10 +469,6 @@
                                                               <div class="progress progress-info active">
                                                                   <div class="bar" style="width: 40%;"></div>
                                                               </div>
-            <!--                                                  <strong>iPad/iPhone</strong><span class="pull-right">10%</span>-->
-            <!--                                                  <div class="progress progress-striped active">-->
-            <!--                                                      <div class="bar" style="width: 10%;"></div>-->
-            <!--                                                  </div>-->
                                                               <strong>Cheongju</strong><span class="pull-right">5%</span>
                                                               <div class="progress progress-success active">
                                                                   <div class="bar" style="width: 5%;"></div>
@@ -400,18 +481,15 @@
                                                                   <a href="#" class="btn btn-large btn-success">Vote</a>
 <!--                                                                <a href="#" class="pull-right">View detailed results</a>-->
                                                               </p>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
+                                         </div>
+                                     </div>
                                     </div>
                                 </section>
+                                </div>
 
-                                <div class="col-lg-8">
+                                <div class="blog-details spad">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-lg-10">
                                     <div class="row">
                                         <div class="col-lg-4">
                                             <div class="contact__text">
@@ -444,7 +522,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>
