@@ -70,7 +70,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="product__item__text">
-                                                            <h6><a href="#challengeTag1">very easy</a></h6>
+                                                            <h6><a href="#challengeTag1" data-toggle="collapse" aria-expanded="true" aria-controls="challengeTag1" >very easy</a></h6>
                                                             <span class="icon_star"></span>
                                                         </div>
                                             </div>
@@ -81,7 +81,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="product__item__text">
-                                                            <h6><a href="#challengeTag2">easy</a></h6>
+                                                            <h6><a href="#challengeTag2" data-toggle="collapse" aria-expanded="true" aria-controls="challengeTag2">easy</a></h6>
                                                             <span class="icon_star"></span>
                                                             <span class="icon_star"></span>
                                                         </div>
@@ -93,7 +93,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="product__item__text">
-                                                            <h6><a href="#challengeTag3">normal</a></h6>
+                                                            <h6><a href="#challengeTag3" data-toggle="collapse" aria-expanded="true" aria-controls="challengeTag3">normal</a></h6>
                                                             <span class="icon_star"></span>
                                                             <span class="icon_star"></span>
                                                             <span class="icon_star"></span>
@@ -106,7 +106,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="product__item__text">
-                                                            <h6><a href="#challengeTag4">hard</a></h6>
+                                                            <h6><a href="#challengeTag4" data-toggle="collapse" aria-expanded="true" aria-controls="challengeTag4">hard</a></h6>
                                                             <span class="icon_star"></span>
                                                             <span class="icon_star"></span>
                                                             <span class="icon_star"></span>
@@ -120,7 +120,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="product__item__text">
-                                                            <h6><a href="#challengeTag5">very hard</a></h6>
+                                                            <h6><a href="#challengeTag5" data-toggle="collapse" aria-expanded="true" aria-controls="challengeTag5">very hard</a></h6>
                                                             <span class="icon_star"></span>
                                                             <span class="icon_star"></span>
                                                             <span class="icon_star"></span>
@@ -137,10 +137,14 @@
 
                             <!--난이도별 음식 설명 Start-->
                             <section class="blog-details spad">
+
                                     <div class="container">
                                         <div class="row-vh d-flex flex-row justify-content-center">
                                             <div class="col-lg-12">
-                                                <div class="blog__details__content " id="challengeTag1" >
+                                                <div class="blog__details__content collapse" id="challengeTag1" >
+                                                    <div class="section-title text-center">
+                                                        <h2>Samgyeopsal</h2>
+                                                    </div>
                                                     <div class="row">
                                                         <div class="col-lg-6">
 <!--                                                            <img src="{% static 'img/boards/veryeasy-pork.jpg' %}" class="rounded-circle" alt="" onclick="'onDisplay1()">-->
@@ -148,9 +152,6 @@
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <div class="box">
-                                                                <div class="section-title text-center">
-                                                                    <h2>Samgyeopsal</h2>
-                                                                </div>
                                                                 <p>
                                                                 [삼겹살]<br>
                                                                 Fat-streaked pork belly grilled and dipped in salt or ssamjang (red soybean paste dip).<br> Also eaten wrapped in lettuce leaves.<br>
@@ -176,16 +177,16 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="blog__details__content " id="challengeTag2">
+                                                <div class="blog__details__content collapse" id="challengeTag2">
+                                                    <div class="section-title text-center">
+                                                        <h2>Kimbap</h2>
+                                                    </div>
                                                     <div class="row">
                                                         <div class="col-lg-6">
                                                             <img src="{% static 'img/boards/easy-kimbab.png' %}" alt="">
                                                         </div>
                                                         <div class="col-lg-6">
                                                         <div class="box">
-                                                            <div class="section-title text-center">
-                                                                <h2>Kimbap</h2>
-                                                            </div>
                                                             <p>[김밥]<br>
                                                                 Rice seasoned with salt and sesame oil and rolled up in a sheet of roasted gim (dried laver) with spinach, carrots, and pickled white radish.<br> The long roll is sliced and served in bite-sized pieces.<br>
                                                             </p>
@@ -212,16 +213,16 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="blog__details__content " id="challengeTag3">
+                                                <div class="blog__details__content collapse" id="challengeTag3">
+                                                    <div class="section-title text-center">
+                                                        <h2>Japchae</h2>
+                                                    </div>
                                                     <div class="row">
                                                         <div class="col-lg-6">
                                                             <img src="{% static 'img/boards/normal-japchae.jpg' %}" alt="">
                                                         </div>
                                                         <div class="col-lg-6">
                                                         <div class="box">
-                                                            <div class="section-title text-center">
-                                                                <h2>Japchae</h2>
-                                                            </div>
                                                             <p>[잡채]<br>
                                                                 Glass noodles stir-fried with beef and assorted mushrooms and vegetables.<br>
                                                                 A colorful classic dish that is always served at large gatherings or on special occasions.<br>
@@ -250,16 +251,16 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="blog__details__content " id="challengeTag4">
+                                                <div class="blog__details__content collapse" id="challengeTag4">
+                                                    <div class="section-title text-center">
+                                                        <h2>Sundae</h2>
+                                                    </div>
                                                     <div class="row">
                                                         <div class="col-lg-6">
                                                             <img src="{% static 'img/boards/hard-sundae.png' %}" alt="">
                                                         </div>
                                                         <div class="col-lg-6">
                                                         <div class="box">
-                                                            <div class="section-title text-center">
-                                                                <h2>Sundae</h2>
-                                                            </div>
                                                             <p>[순대]<br>
                                                                 Pork intestines stuffed with glass noodles, vegetables, sweet rice, coagulated pig's blood (seonji) and steamed.<br>
                                                                 Variations include Ojingeosundae (stuffed squid) and chapssal sundae (sweet rice sundae). This Korean blood sausage also comes in regional variations such as Byeongcheon or Abai Blood Sausage.<br>
@@ -288,16 +289,16 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="blog__details__content " id="challengeTag5">
+                                                <div class="blog__details__content collapse" id="challengeTag5">
+                                                    <div class="section-title text-center">
+                                                        <h2>Dakbal</h2>
+                                                    </div>
                                                     <div class="row">
                                                         <div class="col-lg-6">
                                                             <img src="{% static 'img/boards/veryhard-foot.jpg' %}"  alt="">
                                                         </div>
                                                         <div class="col-lg-6">
                                                         <div class="box">
-                                                            <div class="section-title text-center">
-                                                                <h2>Dakbal</h2>
-                                                            </div>
                                                             <p>[닭발]<br>
                                                                 Chicken feet boiled with garlic, green onion, ginger, and bay leaves and stir-fried with a mixture of gochujang (red chili paste), red chili powder, chopped garlic, syrup, and rice wine.</p>
                                                         </div>
